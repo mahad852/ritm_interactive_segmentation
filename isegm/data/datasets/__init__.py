@@ -11,3 +11,7 @@ from .images_dir import ImagesDirDataset
 from .ade20k import ADE20kDataset
 from .pascalvoc import PascalVocDataset
 from .leaf import LeafDataset
+from .ishape import IShapeDataset
+from .trash import TrashDataset
+from .gtea import GTEADataset
+from .woodscape import WoodscapeDataset

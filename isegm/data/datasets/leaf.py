@@ -14,6 +14,7 @@ class LeafDataset(ISDataset):
         super(LeafDataset, self).__init__(**kwargs)
 
         self.dataset_path = Path(dataset_path)
+        self.dataset_samples = [self.get_file_name(i) + '_rgb.png' for i in range(1, 121)]
     
     def get_file_name(self, image_num):
         prefix = 'ara2012_plant'
@@ -23,7 +24,7 @@ class LeafDataset(ISDataset):
 
     def get_sample(self, index) -> DSample:
 
-        image_path = os.path.join(self.dataset_path, self.get_file_name(index) + '_rgb.png')
+        image_path = os.path.join(self.dataset_path, self.dataset_samples[index])
         mask_path = os.path.join(self.dataset_path, self.get_file_name(index) + '_label.png')
 
         image = cv2.imread(image_path)

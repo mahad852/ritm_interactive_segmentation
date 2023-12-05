@@ -15,7 +15,7 @@ class IShapeDataset(ISDataset):
         super(IShapeDataset, self).__init__(**kwargs)
 
         self.dataset_path = Path(dataset_path)
-        self.image_ids = []
+        self.dataset_samples = []
         self.images = {}
 
         for sub_dirs in os.listdir(self.dataset_path):
@@ -34,7 +34,7 @@ class IShapeDataset(ISDataset):
                 self.images[img_id] = {}
                 self.images[img_id]['path'] = os.path.join(val_dir, 'image', img_obj['file_name'])
                 self.images[img_id]['seg'] = []
-                self.image_ids.append(img_id)
+                self.dataset_samples.append(img_id)
 
             for ann_obj in annotations_obj['annotations']:                
                 img_id = sub_dirs + ann_obj['image_id']
@@ -42,7 +42,7 @@ class IShapeDataset(ISDataset):
 
 
     def get_sample(self, index) -> DSample:
-        image_id = self.image_ids[index]
+        image_id = self.dataset_samples[index]
 
         image_path = os.path.join(self.images[image_id]['path'])
 

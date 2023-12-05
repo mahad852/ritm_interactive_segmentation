@@ -7,6 +7,11 @@ BERKELEY_PATH: "./datasets/Berkeley"
 DAVIS_PATH: "./datasets/DAVIS"
 COCO_MVAL_PATH: "./datasets/COCO_MVal"
 LEAF_PATH: "../Plant_Phenotyping_Datasets/Plant/Ara2012"
+TRASH_PATH: "../dataset/instance_version"
+ISHAPE_PATH: "../ishape"
+GTEA_PATH: "../GeorgiaTech/GTEA"
+WOODSCAPE_PATH: "../woodscape"
+
 
 # Train datasets
 SBD_PATH: "./datasets/SBD"
