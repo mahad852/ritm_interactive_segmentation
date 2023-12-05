@@ -6,6 +6,7 @@ GRABCUT_PATH: "./datasets/GrabCut"
 BERKELEY_PATH: "./datasets/Berkeley"
 DAVIS_PATH: "./datasets/DAVIS"
 COCO_MVAL_PATH: "./datasets/COCO_MVal"
+LEAF_PATH: "../Plant_Phenotyping_Datasets/Plant/Ara2012"
 
 # Train datasets
 SBD_PATH: "./datasets/SBD"
@@ -13,7 +14,7 @@ COCO_PATH: "./datasets/coco2017"
 LVIS_PATH: "./datasets/LVIS"
 OPENIMAGES_PATH: "./datasets/OpenImages"
 PASCALVOC_PATH: "./datasets/PascalVOC"
-ADE20K_PATH: "./datasets/ADE20K"
+ADE20K_PATH: "../ade20k/ADE20K_2021_17_01"
 
 # You can download the weights for HRNet from the repository:
 # https://github.com/HRNet/HRNet-Image-Classification
